@@ -17,10 +17,12 @@ contenteditable
 ## More on ECMAScript 6
 
 [ES6 Class Examples by Paul Irish and the google team](https://github.com/GoogleChrome/samples/blob/gh-pages/classes-es6/index.html)
+
 [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 
 ## References
 
 [Caret Position and adding elements at range](http://jsfiddle.net/Xefdb/9/)
+
 [Caret Attribute examples ](http://jsfiddle.net/cpatik/3QAeC/)
 
