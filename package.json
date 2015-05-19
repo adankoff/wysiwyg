@@ -1,0 +1,29 @@
+{
+  "name": "wysiwyg",
+  "version": "1.0.0",
+  "description": "contenteditable test",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.7.1",
+    "gulp": "^3.8.11",
+    "gulp-sass": "^2.0.1",
+    "gulp-sourcemaps": "^1.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adankoff/wysiwyg.git"
+  },
+  "keywords": [
+    "contenteditable"
+  ],
+  "author": "Alex Dankoff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adankoff/wysiwyg/issues"
+  },
+  "homepage": "https://github.com/adankoff/wysiwyg"
+}

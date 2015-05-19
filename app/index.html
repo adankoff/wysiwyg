@@ -1,0 +1,158 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=0.1">
+        <title>Wysiwyg Editor</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script src='components/jquery/dist/jquery.min.js'></script>
+        <script src='scripts/main.js'></script>
+    </head> 
+    <body>
+        
+        <div id="editor" class="container" contenteditable="true"></div>
+
+        <div class="tooltip">
+            <ul>
+                <li class="tab active" data-toggle="emoji">Emoji</li>
+                <li class="tab" data-toggle="icon">Icons</li>
+            </ul>
+            <div class="options">
+                <div class="tabcontent emoji active">
+                    <span class="emoji">😄</span>
+                    <span class="emoji">😃</span>
+                    <span class="emoji">😀</span>
+                    <span class="emoji">😊</span>
+                    <span class="emoji">😉</span>
+                    <span class="emoji">😍</span>
+                    <span class="emoji">😘</span>
+                    <span class="emoji">😚</span>
+                    <span class="emoji">😗</span>
+                    <span class="emoji">😙</span>
+                    <span class="emoji">😜</span>
+                    <span class="emoji">😝</span>
+                    <span class="emoji">😛</span>
+                    <span class="emoji">😳</span>
+                    <span class="emoji">😁</span>
+                    <span class="emoji">😔</span>
+                    <span class="emoji">😌</span>
+                    <span class="emoji">😒</span>
+                    <span class="emoji">😞</span>
+                    <span class="emoji">😣</span>
+                    <span class="emoji">😢</span>
+                    <span class="emoji">😂</span>
+                    <span class="emoji">😭</span>
+                    <span class="emoji">😪</span>
+                    <span class="emoji">😥</span>
+                    <span class="emoji">😰</span>
+                    <span class="emoji">😅</span>
+                    <span class="emoji">😓</span>
+                    <span class="emoji">😩</span>
+                    <span class="emoji">😫</span>
+                    <span class="emoji">😨</span>
+                    <span class="emoji">😱</span>
+                    <span class="emoji">😠</span>
+                    <span class="emoji">😡</span>
+                    <span class="emoji">😤</span>
+                </div>
+                <div class="tabcontent icon">
+                    <span class="fa fa-align-center"></span>
+                    <span class="fa fa-align-justify"></span>
+                    <span class="fa fa-align-left"></span>
+                    <span class="fa fa-align-right"></span>
+                    <span class="fa fa-bold"></span>
+                    <span class="fa fa-chain-broken"></span>
+                    <span class="fa fa-clipboard"></span>
+                    <span class="fa fa-columns"></span>
+                    <span class="fa fa-copy"></span>
+                    <span class="fa fa-cut"></span>
+                    <span class="fa fa-dedent"></span>
+                    <span class="fa fa-eraser"></span>
+                    <span class="fa fa-file"></span>
+                    <span class="fa fa-file-o"></span>
+                    <span class="fa fa-file-text"></span>
+                    <span class="fa fa-file-text-o"></span>
+                    <span class="fa fa-files-o"></span>
+                    <span class="fa fa-floppy-o"></span>
+                    <span class="fa fa-font"></span>
+                    <span class="fa fa-header"></span>
+                    <span class="fa fa-indent"></span>
+                    <span class="fa fa-italic"></span>
+                    <span class="fa fa-link"></span>
+                    <span class="fa fa-list"></span>
+                    <span class="fa fa-list-alt"></span>
+                    <span class="fa fa-list-ol"></span>
+                    <span class="fa fa-list-ul"></span>
+                    <span class="fa fa-outdent"></span>
+                    <span class="fa fa-paperclip"></span>
+                    <span class="fa fa-paragraph"></span>
+                    <span class="fa fa-paste"></span>
+                    <span class="fa fa-repeat"></span>
+                    <span class="fa fa-rotate-left"></span>
+                    <span class="fa fa-rotate-right"></span>
+                    <span class="fa fa-save"></span>
+                    <span class="fa fa-scissors"></span>
+                    <span class="fa fa-strikethrough"></span>
+                    <span class="fa fa-subscript"></span>
+                    <span class="fa fa-superscript"></span>
+                    <span class="fa fa-table"></span>
+                    <span class="fa fa-text-height"></span>
+                    <span class="fa fa-text-width"></span>
+                    <span class="fa fa-th"></span>
+                    <span class="fa fa-th-large"></span>
+                    <span class="fa fa-th-list"></span>
+                    <span class="fa fa-underline"></span>
+                    <span class="fa fa-undo"></span>
+                    <span class="fa fa-unlink"></span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="debug container">
+            <div class="row">
+                <h2>Content</h2>
+                <div class="row">
+                    <label>Status</label>
+                    <span class="value contentStatus">Loading</span>
+                </div>
+                <div class="row">
+                    <label>Localstorage</label>
+                    <div class="value">
+                        <span class="localStorage">Waiting</span>
+                        <a href="#" class="clearLocalStorage">Clear localStorage</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <label>Content node count</label>
+                    <span class="nodeCount value">0</span>
+                </div>
+                <div class="row">
+                    <label>Json</label>
+                    <textarea class="json value" type="text"></textarea>
+                </div>
+            </div>
+            <!-- <div class="box">
+                <h2>Caret</h2>
+                <div class="row">
+                    <label>Start Position</label>
+                    <span class="caretStartPosition value">0</span>
+                </div>
+                <div class="row">
+                    <label>End Position</label>
+                    <span class="caretEndPosition value">0</span>
+                </div>
+                <div class="row">
+                    <label>Range Size</label>
+                    <span class="caretRangeSize value">0</span>
+                </div>
+                <div class="row">
+                    <label>Parent Node</label>
+                    <span class="caretRangeSize value">0</span>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Build</h2>
+            </div> -->
+        </div>
+    </body>
+</html>

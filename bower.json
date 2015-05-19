@@ -1,0 +1,21 @@
+{
+  "name": "y",
+  "version": "0.0.0",
+  "directory": "app/bower_components",
+  "authors": [
+    "Alex Dankoff"
+  ],
+  "description": "wysiwyg editor with contenteditable",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery": "~2.1.4"
+  }
+}
