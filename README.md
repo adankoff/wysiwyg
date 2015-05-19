@@ -1,9 +1,12 @@
 # wysiwyg
 
-contenteditable
+Example of contenteditable div with compilation to json string and saving to localStorage. Editable area has a tooltip for inserting html emojis and icons on click and when navigating with the arrow keys.
+
+[Demo.](http://adankoff.com/wysiwyg/app/)
 
 ## Installation instructions
 
+    git clone https://github.com/adankoff/wysiwyg.git
     npm install
     bower install
     gulp
