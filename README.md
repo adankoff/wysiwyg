@@ -7,6 +7,8 @@ Example of contenteditable div with compilation to json string and saving to loc
 ## Installation instructions
 
     git clone https://github.com/adankoff/wysiwyg.git
+    cd wysiwyg
+    
     npm install
     bower install
     gulp
